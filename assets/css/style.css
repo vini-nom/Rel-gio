@@ -1,0 +1,75 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Palheta de Cores*/
+:root{
+    --letter-color: #fff;
+    --background: #023047;
+    --container-color: #457b9d;
+    --shadow-color: #02273a;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin-top: 135px;
+    height: 300px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: 0px 10px 10px 10px var(--shadow-color);
+    border-radius: 40px;
+}
+
+.time_container{
+    width: 200px;
+    height: 200px;
+    background-color:var(--container-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 10px 10px var(--shadow-color);
+    border-radius: 30px;
+}
+
+.data{
+    position: absolute;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 535px;
+    margin-left: 10px;
+}
+
+
+h1{
+    color: var(--letter-color);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 5px;
+}
+
+span{
+    color: var(--letter-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
