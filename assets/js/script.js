@@ -1,12 +1,13 @@
-function relogio(){
+function tempo(){
+
+    var meses = ['Janeriro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+
     var data = new Date();
     var hr = data.getHours();
     var min = data.getMinutes();
     var sec = data.getSeconds();
     var dat = data.getDate();
-    var mon = data.getDay();
     var yr = data.getFullYear();
-    var day = data.getTime();
    
 
     if(hr < 10){
@@ -25,11 +26,6 @@ function relogio(){
         dat = '0' + dat;
     }
 
-    if(mon < 10){
-        mon = '0' + mon;
-    }
-
-    
     var hour = hr;
     var tempo_hora = document.getElementById('hours');
     tempo_hora.innerHTML = hour;
@@ -46,7 +42,7 @@ function relogio(){
     var data_dia = document.getElementById('days')
     data_dia.innerHTML = day
 
-    var month = mon
+    var month = meses[data.getMonth()] 
     var data_mes = document.getElementById('months')
     data_mes.innerHTML = month
 
@@ -55,4 +51,4 @@ function relogio(){
     data_ano.innerHTML = year
 
 }
-setInterval(relogio,500);
+setInterval(tempo,500);
